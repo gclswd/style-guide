@@ -1,6 +1,9 @@
 ---
 title: Colors
 layout: docs
+
+eleventyNavigation:
+  key: Colors
 ---
 {% block head %}
 <meta name="custom" value="hello">

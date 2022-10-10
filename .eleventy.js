@@ -2,6 +2,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
 const pluginTOC = require('eleventy-plugin-toc');
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 const Demo = require('./src/includes/components/Demo');
 const ColorPalette = require('./src/includes/components/ColorPalette');
@@ -9,6 +10,7 @@ const ColorPalette = require('./src/includes/components/ColorPalette');
 function eleventyConfig(config) {
   config.setTemplateFormats(["html", "md", "njk", "11ty.js"]);
   config.addPlugin(syntaxHighlight);
+  config.addPlugin(eleventyNavigationPlugin);
   config.addPlugin(pluginTOC, {
     ul: true
   });

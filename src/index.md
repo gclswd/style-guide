@@ -1,6 +1,9 @@
 ---
 title: GCLS Digital Style Guide
 layout: docs
+
+eleventyNavigation:
+  key: Home
 ---
 
 This digital style guide is intended to be a roadmap for designing and developing digital resources for the Greenville County Library System.  It contains detailed information about implementing the GCLS design system on both a philosophical and technical level.
