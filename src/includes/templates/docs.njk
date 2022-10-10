@@ -1,0 +1,41 @@
+{% extends "./base.njk" %}
+
+{% block head %}
+<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+{% endblock %}
+
+{% block main %}
+    <nav class="navbar navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{{ '/img/logo-1000-square.png' | url }}" class="d-inline-block align-text-top" width="24" height="24"/> {{ site.name }} / {{ title }}
+            </a>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-2">
+                {% block sidebar %}
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <a href="{{ '/' | url }}" class="link-primary text-decoration-none">Home</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="{{ '/colors/' | url }}" class="link-primary text-decoration-none">Colors</a>
+                        </li>
+                    </ul>
+                {% endblock %}
+            </div>
+            <div class="col-lg-8">
+                {% block content %}
+                    <h1 class="mb-3">{{ title }}</h1>
+                    {{ content | safe }}
+                {% endblock %}
+            </div>
+            <div class="col-lg-2 col-md-0">
+                <h5>Table of Contents</h5>
+                <aside>{{content | toc | safe }}</aside>
+            </div>
+        </div>
+    </div>
+{% endblock %}

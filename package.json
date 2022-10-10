@@ -1,0 +1,42 @@
+{
+  "name": "style-guide",
+  "version": "0.1.0",
+  "description": "The official GCLS digital style guide",
+  "main": "index.js",
+  "scripts": {
+    "dev": "DEBUG=* npm-run-all --parallel bundle:*",
+    "bundle:eleventy": "eleventy --serve --quiet",
+    "bundle:parcel": "parcel src/**/*.js src/**/*.scss --dist-dir docs",
+    "build": "run-s prod:*",
+    "prod:eleventy": "eleventy",
+    "prod:parcel": "parcel build src/**/*.js src/**/*.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gclswd/style-guide.git"
+  },
+  "author": "Matthew Miller, Shawn Sprehe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gclswd/style-guide/issues"
+  },
+  "homepage": "https://github.com/gclswd/style-guide#readme",
+  "jshintConfig": {
+    "esversion": "6"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "common-tags": "^1.8.2",
+    "eleventy-plugin-toc": "^1.1.5",
+    "jshint": "^2.13.5",
+    "markdown-it-anchor": "^8.6.5",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.1"
+  }
+}

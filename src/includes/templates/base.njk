@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+    <head>
+        <title>{{ title }} | {{ site.name }}</title>
+        <link rel="stylesheet" href="{{ '/scss/base.css' | url }}" />
+        <link rel="icon" href="{{ '/img/favicon/favicon-194x194.png' | url }}" />
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+        {% block main %}{% endblock %}
+    </body>
+</html>

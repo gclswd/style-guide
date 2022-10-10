@@ -1,2 +1,3 @@
-# style-guide
-The official GCLS digital style guide
+# GCLS Style Guide
+
+This repository contains the source and distribution files for the GCLS digital style guide.

@@ -1,0 +1,73 @@
+$gcls-admiral-variants: (
+  100: #4d4c68,
+  75:  #6e6e88,
+  50:  #9595ab,
+  25:  #c2c2d1,
+  10:  #e2e1e9
+);
+
+$gcls-gray-variants: (
+  100: #4d4d4d,
+  75:  #58595b,
+  50:  #808080,
+  25:  #ccc,
+  10:  #e5e5e5
+);
+
+$gcls-harbor-variants: (
+  100: #0d84c7,
+  75:  #5aa5db,
+  50:  #91bee6,
+  25:  #c6daf1,
+  10:  #e6eef8
+);
+
+$gcls-lime-variants: (
+  100: #c0d730,
+  75:  #cfdf69,
+  50:  #dee89b,
+  25:  #edf3cb,
+  10:  #f6f9e8
+);
+
+$gcls-orchid-variants: (
+  100: #bf4097,
+  75:  #cb72ae,
+  50:  #d89dc6,
+  25:  #e9cbe2,
+  10:  #f4e8f2
+);
+
+$gcls-pool-variants: (
+  100: #42c4dd,
+  75:  #7cd0e4,
+  50:  #a9deeb,
+  25:  #d3eef4,
+  10:  #ecf7f9
+);
+
+$gcls-tangerine-variants: (
+  100: #fbaf45,
+  75:  #fdc174,
+  50:  #ffd49d,
+  25:  #ffe8ca,
+  10:  #fff4e7
+);
+
+$gcls-all-variants: (
+  "admiral":   $gcls-admiral-variants,
+  "gray":      $gcls-gray-variants,
+  "harbor":    $gcls-harbor-variants,
+  "lime":      $gcls-lime-variants,
+  "orchid":    $gcls-orchid-variants,
+  "pool":      $gcls-pool-variants,
+  "tangerine": $gcls-tangerine-variants
+);
+
+$gcls-admiral:   map-get($gcls-admiral-variants, 100);
+$gcls-gray:      map-get($gcls-gray-variants, 100);
+$gcls-harbor:    map-get($gcls-harbor-variants, 100);
+$gcls-lime:      map-get($gcls-lime-variants, 100);
+$gcls-orchid:    map-get($gcls-orchid-variants, 100);
+$gcls-pool:      map-get($gcls-pool-variants, 100);
+$gcls-tangerine: map-get($gcls-tangerine-variants, 100);
