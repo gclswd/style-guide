@@ -46,7 +46,8 @@ function eleventyConfig(config) {
     },
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
-    passthroughFileCopy: true
+    passthroughFileCopy: true,
+    pathPrefix: "/style-guide/"
   };
 }
 
