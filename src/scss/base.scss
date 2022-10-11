@@ -1,7 +1,18 @@
 @import "palette";
 
+
 $primary: $gcls-harbor;
+$secondary: $gcls-orchid;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+
+$btn-border-radius: 0;
+$btn-padding-x: 24px;
+$btn-padding-y: 8px;
 
 @import "bootstrap/scss/bootstrap";
 
 @import "ColorPalette";
+@import "gcls-button";

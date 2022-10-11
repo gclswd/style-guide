@@ -1,0 +1,16 @@
+.btn {
+
+    
+    &-primary {
+        --bs-btn-color: #fff;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-active-color: #fff;
+        --bs-btn-disabled-color: #fff;
+    }
+}
+
+.gcls-btn {
+    &--margin {
+        margin: 15px;
+    }
+}
