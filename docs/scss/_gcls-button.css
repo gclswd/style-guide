@@ -1,4 +1,8 @@
-.btn-primary {
+.btn-primary:hover {
+  background-color: #085681 !important;
+}
+
+.btn-primary, .btn-outline-primary:hover {
   --bs-btn-color: #fff;
   --bs-btn-hover-color: #fff;
   --bs-btn-active-color: #fff;
