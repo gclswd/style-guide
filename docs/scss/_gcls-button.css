@@ -9,6 +9,29 @@
   --bs-btn-disabled-color: #fff;
 }
 
+.gcls-btn {
+  text-transform: capitalize;
+  color: #0d84c7;
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 8px 24px;
+}
+
+.gcls-btn:hover {
+  color: #e5e5e5;
+  background: #0d84c7;
+}
+
+.gcls-btn:active {
+  background: #085681;
+}
+
+.gcls-btn:disabled, .gcls-btn-disabled {
+  color: gray;
+  background: none;
+}
+
 .gcls-btn--margin {
   margin: 15px;
 }

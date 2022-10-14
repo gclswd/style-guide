@@ -1,3 +1,5 @@
+// Color Palette
+
 $gcls-admiral-variants: (
   100: #4d4c68,
   75:  #6e6e88,
@@ -72,9 +74,12 @@ $gcls-orchid:    map-get($gcls-orchid-variants, 100);
 $gcls-pool:      map-get($gcls-pool-variants, 100);
 $gcls-tangerine: map-get($gcls-tangerine-variants, 100);
 
-$primary: $gcls-harbor;
-$secondary: $gcls-orchid;
-$success: #28a745;
-$info: #17a2b8;
-$warning: #ffc107;
-$danger: #dc3545;
+// GCLS Button
+$gcls-btn-padding-x: 24px;
+$gcls-btn-padding-y: 8px;
+
+$gcls-btn-margin-x: 30px;
+$gcls-btn-margin-y: 30px;
+
+$gcls-btn-text-transform: capitalize;
+

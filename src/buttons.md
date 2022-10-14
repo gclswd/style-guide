@@ -72,3 +72,22 @@ In many (but not all) cases, buttons will need a margin.  To add a default margi
 <button type="button" class="btn btn-primary gcls-btn gcls-btn--margin">Primary</button>
 <button type="button" class="btn btn-primary  gcls-btn gcls-btn--margin">Primary</button>
 ```
+<div class="card">
+  <div class="card-body">
+    <button type="button" class="btn gcls-btn--text btn-outline-primary">Primary</button>
+    <button type="button" class="btn gcls-btn--text btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn gcls-btn--text btn-outline-success">Success</button>
+    <button type="button" class="btn gcls-btn--text btn-outline-danger">Danger</button>
+    <button type="button" class="btn gcls-btn--text btn-outline-warning">Warning</button>
+    <button type="button" class="btn gcls-btn--text btn-outline-info">Info</button>
+    <button type="button" class="btn gcls-btn--text btn-outline-light">Light</button>
+    <button type="button" class="btn gcls-btn--text btn-outline-dark">Dark</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <button type="button" class="gcls-btn">Primary</button>
+    <button type="button" class="gcls-btn" disabled>disabled</button>
+  </div>
+</div>

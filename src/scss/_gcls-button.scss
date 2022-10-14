@@ -1,4 +1,4 @@
-
+@import "gcls-variables";
 
 .btn {
 
@@ -16,6 +16,35 @@
 }
 
 .gcls-btn {
+
+    border-radius: 0;
+    padding-top: $gcls-btn-padding-y;
+    padding-bottom: $gcls-btn-padding-y;
+    padding-left: $gcls-btn-padding-x;
+    padding-right: $gcls-btn-padding-x;
+
+    text-transform: $gcls-btn-text-transform;
+
+    border: none;
+
+    background: none;
+
+    color: $gcls-harbor;
+
+    &:hover {
+        background: $gcls-harbor;
+        color: map-get($gcls-gray-variants, 10);
+    }
+
+    &:active {
+        background: #085681;
+    }
+
+    &:disabled, &-disabled {
+        background: none;
+        color: map-get($gcls-gray-variants, 50);
+    }
+
     &--margin {
         margin: 15px;
     }
